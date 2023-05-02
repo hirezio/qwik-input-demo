@@ -5,10 +5,12 @@ import Counter from '~/components/starter/counter/counter';
 import Hero from '~/components/starter/hero/hero';
 import Infobox from '~/components/starter/infobox/infobox';
 import Starter from '~/components/starter/next-steps/next-steps';
+import { InputDemo } from './input-demo';
 
 export default component$(() => {
   return (
     <>
+      
       <Hero />
       <Starter />
 
@@ -16,11 +18,14 @@ export default component$(() => {
       <div role="presentation" class="ellipsis ellipsis-purple"></div>
 
       <div class="container container-center container-spacing-xl">
+      
         <h3>
           You can <span class="highlight">count</span>
           <br /> on me
         </h3>
         <Counter />
+
+        <InputDemo/>
       </div>
 
       <div class="container container-flex">

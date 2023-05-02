@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import styles from './hero.module.css';
+import { InputDemo } from '~/routes/input-demo';
 
 export default component$(() => {
   return (
@@ -9,6 +10,9 @@ export default component$(() => {
         <br />
         to have <span class="highlight">you</span> here
       </h1>
+
+      <InputDemo/>
+
       <p>Have fun building your App with Qwik.</p>
       <div class={styles['button-group']}>
         <button
